@@ -1,239 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyara Beverages | Refreshment, Reimagined</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <i class="fas fa-leaf"></i>
-                <span>KYARA</span>
-            </a>
-            
-            <button class="mobile-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <i class="fas fa-leaf"></i>
+          <span>KYARA</span>
+        </a>
+
+        <button class="mobile-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </li>
+        </ul>
+      </div>
     </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+      <div class="cart-header">
+        <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+        <button class="close-cart">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="cart-items">
+        <!-- Cart items will be inserted here dynamically -->
+        <div class="empty-cart">
+          <i class="fas fa-shopping-cart"></i>
+          <h3>Your cart is empty</h3>
+          <p>Add some refreshing drinks to your cart</p>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="amount">$0.00</span>
+        </div>
+        <a href="#" class="checkout-btn">Proceed to Checkout</a>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <span class="tagline">Naturally Refreshing</span>
-            <h1>Refreshment, Reimagined</h1>
-            <p>Discover our handcrafted beverages made with organic ingredients and sustainable practices. Taste the difference nature intended.</p>
-            <a href="#products" class="btn"><span>Explore Drinks</span></a>
-        </div>
+      <div class="hero-content">
+        <span class="tagline">Naturally Refreshing</span>
+        <h1>Refreshment, Reimagined</h1>
+        <p>
+          Discover our handcrafted beverages made with organic ingredients and
+          sustainable practices. Taste the difference nature intended.
+        </p>
+        <a href="#products" class="btn"><span>Explore Drinks</span></a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Story</h2>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Kyara Beverages was born from a simple idea: refreshment should be both delicious and wholesome. Founded in 2020 by a team of beverage enthusiasts and nutrition experts, we set out to create drinks that nourish both body and soul.</p>
-                    <p>We source organic ingredients directly from ethical farmers who share our commitment to sustainable agriculture. Every bottle is crafted with care, without artificial additives, excessive sugars, or compromises on taste.</p>
-                    <p>Our mission is to revolutionize the beverage industry by proving that what's good for you can also be irresistibly refreshing. Join us on our journey to bring authentic, plant-powered refreshment to the world.</p>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1543253687-c931c8e01820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Kyara Beverages Team">
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Story</h2>
         </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Kyara Beverages was born from a simple idea: refreshment should be
+              both delicious and wholesome. Founded in 2020 by a team of
+              beverage enthusiasts and nutrition experts, we set out to create
+              drinks that nourish both body and soul.
+            </p>
+            <p>
+              We source organic ingredients directly from ethical farmers who
+              share our commitment to sustainable agriculture. Every bottle is
+              crafted with care, without artificial additives, excessive sugars,
+              or compromises on taste.
+            </p>
+            <p>
+              Our mission is to revolutionize the beverage industry by proving
+              that what's good for you can also be irresistibly refreshing. Join
+              us on our journey to bring authentic, plant-powered refreshment to
+              the world.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="/assets/images/about.png"
+              alt="Kyara Beverages Team"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Products Section -->
     <section class="products" id="products">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Products</h2>
-            </div>
-            
-            <div class="products-container">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="/assets/images/products/Citrus_Splash.png" alt="Citrus Splash">
-                    </div>
-                    <div class="product-content">
-                        <h3>Citrus Splash</h3>
-                        <p>A vibrant blend of organic oranges, lemons, and limes with a hint of mint.</p>
-                        <div class="product-price">$3.99</div>
-                    </div>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/images/products/Berry_Bliss.png"Berry Bliss">
-                    </div>
-                    <div class="product-content">
-                        <h3>Berry Bliss</h3>
-                        <p>Antioxidant-rich mix of blueberries, raspberries, and blackberries.</p>
-                        <div class="product-price">$4.25</div>
-                    </div>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="/assets/images/products/Green_harmony.png" alt="Green Harmony">
-
-                    </div>
-                    <div class="product-content">
-                        <h3>Green Harmony</h3>
-                        <p>Refreshing fusion of green tea, cucumber, and lime with a hint of ginger.</p>
-                        <div class="product-price">$3.75</div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Products</h2>
         </div>
+
+        <div class="products-container">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="/assets/images/products/Citrus_Splash.png"
+                alt="Citrus Splash"
+              />
+            </div>
+            <div class="product-content">
+              <h3>Citrus Splash</h3>
+              <p>
+                A vibrant blend of organic oranges, lemons, and limes with a
+                hint of mint. Perfect for a refreshing boost anytime.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">$3.99</div>
+                <button
+                  class="add-to-cart"
+                  data-id="1"
+                  data-name="Citrus Splash"
+                  data-price="3.99"
+                  data-image="/assets/images/products/Citrus_Splash.png"
+                >
+                  <i class="fas fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="assets/images/products/Berry_Bliss.png"Berry Bliss">
+            </div>
+            <div class="product-content">
+              <h3>Berry Bliss</h3>
+              <p>
+                Antioxidant-rich mix of blueberries, raspberries, and
+                blackberries. A delicious way to boost your health.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">$4.25</div>
+                <button
+                  class="add-to-cart"
+                  data-id="2"
+                  data-name="Berry Bliss"
+                  data-price="4.25"
+                  data-image="/assets/images/products/Berry_Bliss.png"
+                >
+                  <i class="fas fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="/assets/images/products/Green_harmony.png"
+                alt="Green Harmony"
+              />
+            </div>
+            <div class="product-content">
+              <h3>Green Harmony</h3>
+              <p>
+                Refreshing fusion of green tea, cucumber, and lime with a hint
+                of ginger. The perfect balance of flavor and wellness.
+              </p>
+              <div class="product-footer">
+                <div class="product-price">$3.75</div>
+                <button
+                  class="add-to-cart"
+                  data-id="3"
+                  data-name="Green Harmony"
+                  data-price="3.75"
+                  data-image="/assets/images/products/Green_harmony.png"
+                >
+                  <i class="fas fa-plus"></i> Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-            </div>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>123 Refreshment Way, Beverage City, BC 12345</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>(123) 456-7890</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>info@kyarabeverages.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Hours</h4>
-                            <p>Monday-Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
         </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>123 Refreshment Way, Beverage City, BC 12345</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>(123) 456-7890</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>info@kyarabeverages.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Hours</h4>
+                <p>Monday-Friday: 9AM - 6PM<br />Saturday: 10AM - 4PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                Send Message <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                <a href="#" class="footer-logo">
-                    <i class="fas fa-leaf"></i> KYARA
-                </a>
-                <p>Creating refreshing beverages that honor both people and planet through sustainable practices and organic ingredients.</p>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Products</h4>
-                <ul>
-                    <li><a href="#products">Citrus Splash</a></li>
-                    <li><a href="#products">Berry Bliss</a></li>
-                    <li><a href="#products">Green Harmony</a></li>
-                    <li><a href="#products">Seasonal Specials</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links">
-                <h4>Support</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                    <li><a href="#">Store Locator</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
+      <div class="footer-container">
+        <div class="footer-about">
+          <a href="#" class="footer-logo">
+            <i class="fas fa-leaf"></i> KYARA
+          </a>
+          <p>
+            Creating refreshing beverages that honor both people and planet
+            through sustainable practices and organic ingredients.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-        
-        <div class="copyright">
-            <p>&copy; 2023 Kyara Beverages. All Rights Reserved.</p>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
+
+        <div class="footer-links">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#products">Citrus Splash</a></li>
+            <li><a href="#products">Berry Bliss</a></li>
+            <li><a href="#products">Green Harmony</a></li>
+            <li><a href="#products">Seasonal Specials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Store Locator</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2023 Kyara Beverages. All Rights Reserved.</p>
+      </div>
     </footer>
-<script src="/assets/js/main.js"></script>
-</body>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>

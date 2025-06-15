@@ -14,33 +14,12 @@ A modern, responsive, and lightweight website built to reflect the freshness and
   - Contact form with validation
 - ⚡ Performance-optimized – Lightweight codebase with minimal HTTP requests
 
-## 📂 Folder Structure
-
-kyara-beverages/
-├── index.html           # Main HTML file
-├── assets/
-│   ├── css/             # Stylesheets
-│   ├── js/              # JavaScript files
-│   └── images/          # Website images
-├── README.md            # Project documentation
-└── LICENSE              # MIT License
-
 ## 🚀 How to View the Website Locally
 
-### Option 1: Open Directly
+### Open Directly
 1. Download the project
 2. Open `index.html` in any modern browser (Chrome, Firefox, Safari, Edge)
 
-### Option 2: Using a Local Server (Recommended)
-1. Install Node.js from https://nodejs.org
-2. Install the HTTP server package globally:
-   npm install -g http-server
-3. Navigate to your project folder in terminal:
-   cd kyara-beverages
-4. Start the local server:
-   http-server
-5. Open your browser and go to:
-   http://localhost:8080
 
 ## 🛠 Tools & Frameworks Used
 
@@ -77,11 +56,5 @@ Compatible with all modern browsers:
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## 📜 License
-
-This project is open-source and available under the MIT License. See LICENSE file for details.
-
----
 
 ✨ Built with passion to reflect the refreshing spirit of Kyara Beverages.
