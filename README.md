@@ -26,6 +26,13 @@ https://kyara-beverages.onrender.com
 
 ```
 
+### GitHub Repository Link
+```bash
+https://github.com/Prathaam08/Kyara-Beverages-website
+
+```
+
+
 ## 🛠 Tools & Frameworks Used
 
 Tool / Library              | Purpose                          | Why Chosen
