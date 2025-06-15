@@ -20,6 +20,10 @@ A modern, responsive, and lightweight website built to reflect the freshness and
 1. Download the project
 2. Open `index.html` in any modern browser (Chrome, Firefox, Safari, Edge)
 
+### Just visit :
+```bash
+https://kyara-beverages.onrender.com
+```
 
 ## 🛠 Tools & Frameworks Used
 
